@@ -1,0 +1,58 @@
+{
+  "name": "electra-mobile",
+  "version": "0.0.0",
+  "description": "Android & iOS mobile applications for Electra.",
+  "license": "MIT",
+  "private": true,
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "scripts": {
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test": "node node_modules/jest/bin/jest.js --watch"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "electra-js": "0.0.2",
+    "expo": "^23.0.4",
+    "react": "16.0.0",
+    "react-native": "0.50.3",
+    "react-native-vector-icons": "^4.5.0",
+    "react-navigation": "^1.0.0-beta.27"
+  },
+  "devDependencies": {
+    "react-native-scripts": "1.9.0",
+    "jest-expo": "23.0.0",
+    "react-test-renderer": "16.0.0"
+  },
+  "author": {
+    "name": "Electra",
+    "email": "dev@electraproject.org",
+    "url": "https://electraproject.org"
+  },
+  "contributors": [
+    {
+      "name": "Ivan Gabriele",
+      "email": "ivan.gabriele@gmail.com",
+      "url": "https://www.ivangabriele.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Electra-project/Electra-Mobile.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Electra-project/Electra-Mobile/issues"
+  },
+  "homepage": "https://github.com/Electra-project/Electra-Mobile#readme",
+  "keywords": [
+    "Android",
+    "blockchain",
+    "eca",
+    "electra",
+    "iOS"
+  ]
+}
