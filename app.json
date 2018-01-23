@@ -1,6 +1,4 @@
 {
-  "expo": {
-    "name": "Electra",
-    "sdkVersion": "23.0.0"
-  }
+  "name": "org.electraproject.mobile",
+  "displayName": "Electra"
 }
