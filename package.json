@@ -4,12 +4,10 @@
   "description": "Android & iOS mobile applications for Electra.",
   "license": "MIT",
   "private": true,
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
     "test": "node node_modules/jest/bin/jest.js",
     "test:watch": "node node_modules/jest/bin/jest.js --watch"
   },
@@ -18,16 +16,17 @@
   },
   "dependencies": {
     "electra-js": "0.0.2",
-    "expo": "^25.0.0",
+    "numeral": "^2.0.6",
     "react": "16.2.0",
     "react-native": "0.52.1",
+    "react-native-linear-gradient": "^2.4.0",
     "react-native-vector-icons": "^4.5.0",
     "react-navigation": "^1.0.0-beta.27"
   },
   "devDependencies": {
     "auth0-js": "^9.1.0",
+    "babel-preset-react-native-stage-0": "^1.0.1",
     "jest-expo": "25.0.0",
-    "react-native-scripts": "1.9.0",
     "react-test-renderer": "16.2.0"
   },
   "author": {
