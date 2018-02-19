@@ -1,0 +1,3 @@
+rootProject.name = 'electra-mobile'
+
+include ':app'
