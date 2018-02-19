@@ -9,8 +9,7 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "node node_modules/jest/bin/jest.js",
-    "test:watch": "node node_modules/jest/bin/jest.js --watch",
-    "postinstall": "react-native upgrade; react-native link"
+    "test:watch": "node node_modules/jest/bin/jest.js --watch"
   },
   "jest": {
     "preset": "jest-expo"
