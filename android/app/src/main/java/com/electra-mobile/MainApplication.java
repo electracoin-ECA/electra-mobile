@@ -1,4 +1,4 @@
-package com.electra-mobile;
+package com.electramobile;
 
 import android.app.Application;
 
