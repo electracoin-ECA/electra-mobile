@@ -1,0 +1,3 @@
+rootProject.name = 'electramobile'
+
+include ':app'
