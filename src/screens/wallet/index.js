@@ -24,7 +24,7 @@ export default class WalletScreen extends React.Component {
   }
 
   componentDidMount() {
-    this.electraJs.utils.getCurrentPriceIn(this.state.currency)
+    this.electraJs.webServices.getCurrentPriceIn(this.state.currency)
       .then(currentPrice => this.setState({
         balance: 1122300.724543798,
         currentPrice,
