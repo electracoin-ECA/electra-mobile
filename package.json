@@ -15,6 +15,7 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "debug": "^3.1.0",
     "electra-js": "0.1.0",
     "fresh": "^0.5.2",
     "mime": "^2.0.3",
