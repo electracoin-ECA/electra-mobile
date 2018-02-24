@@ -1,0 +1,31 @@
+{
+    "extends": ["tslint:latest", "tslint-react"],
+    "rules": {
+        "member-ordering": [false],
+        "no-inferrable-types": [false],
+        "typedef": [false],
+        "curly": [true, "ignore-same-line"],
+        "no-switch-case-fall-through": false,
+        "indent": [true, "spaces"],
+        "max-line-length": [true,120],
+        "trailing-comma": [
+            true,
+            {
+                "multiline": "never",
+                "singleline": "never"
+            }
+        ],
+        "align": [true],
+        "interface-name": [false],
+        "no-parameter-properties": false,
+        "semicolon": [true,"never"],
+        "quotemark": [true, "single"],
+        "no-default-export": false,
+        "prefer-function-over-method": false,
+        "newline-per-chained-call": false,
+        "object-literal-sort-keys": false,
+        "completed-docs": false,
+        "no-void-expression": false,
+        "jsx-no-multiline-js": false
+    }
+}
