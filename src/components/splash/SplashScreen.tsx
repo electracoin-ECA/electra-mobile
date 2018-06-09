@@ -40,8 +40,8 @@ export default class SplashScreen extends React.Component<SplashScreenProps, Spl
         //get the Unique ID of the Device
         //Create the Request and send it
         this.setState({status:'Verifying...'});
-        AsyncStorage.removeItem('electraDeviceId');
-        AsyncStorage.removeItem('electra-device-id');
+    //    AsyncStorage.removeItem('electraDeviceId');
+    //    AsyncStorage.removeItem('electra-device-id');
         this.checkDeviceIdInStorage();
         this.setState({status:'Loading...'});
 
