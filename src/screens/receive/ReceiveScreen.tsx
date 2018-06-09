@@ -14,7 +14,7 @@ export default class ReceiveScreen extends React.Component {
   public render(): JSX.Element {
     return (
       <View style={styles.container}>
-        <Text>Receive</Text>
+        <Text>Receive Amount</Text>
       </View>
     )
   }

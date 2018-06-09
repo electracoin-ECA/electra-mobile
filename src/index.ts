@@ -1,19 +1,49 @@
 import { AppRegistry } from 'react-native'
-import { TabNavigator } from 'react-navigation'
+import SplashScreen from './components/splash/SplashScreen'
+import Login from './components/login/Login'
+import Registration from './components/registration/Registration'
+import Dashboard from './components/dashboard/Dashboard'
+import { StackNavigator } from 'react-navigation';
 
-import ReceiveScreen from './screens/receive/ReceiveScreen'
-import SendScreen from './screens/send/SendScreen'
-import SettingsScreen from './screens/settings/SettingsScreen'
-import WalletScreen from './screens/wallet/WalletScreen'
-
-const tabNavigator = TabNavigator(
+const MainStack = StackNavigator(
   {
-    Wallet: { screen: WalletScreen },
-    Receive: { screen: ReceiveScreen },
-    Send: { screen: SendScreen },
-    Settings: { screen: SettingsScreen }
+    Dashboard: {
+      screen: Dashboard
+    }
   },
-  { tabBarPosition: 'bottom' }
-)
+  {
+    navigationOptions: {
+      headerStyle: {
+        backgroundColor: '#f4511e'
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold'
+      }
+    }
+  }
+);
 
-AppRegistry.registerComponent('electramobile', () => tabNavigator)
+const RootStack = StackNavigator(
+  {
+    Main: {
+      screen: MainStack
+    },
+    Splash: {
+      screen: SplashScreen
+    },
+    Login: {
+      screen: Login
+    },
+    Registration: {
+      screen: Registration
+    }
+  },
+  {
+    initialRouteName: 'Splash',
+    mode: 'modal',
+    headerMode: 'none'
+  }
+);
+
+AppRegistry.registerComponent('electramobile', () => RootStack)

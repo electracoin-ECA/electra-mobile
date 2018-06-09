@@ -77,6 +77,8 @@ project.ext.react = [
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
+// 2nd line, add a new apply:
+apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
 
 /**
  * Set this to true to create two separate APKs instead of one:
@@ -137,6 +139,13 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-config')
+    compile project(':react-native-config')
+    compile project(':react-native-svg')
+    compile project(':react-native-device-info')
+    compile project(':react-native-device-info')
+    compile project(':react-native-device-info')
+    compile project(':react-native-device-info')
     compile project(':react-native-vector-icons')
     compile project(':react-native-linear-gradient')
     compile fileTree(dir: "libs", include: ["*.jar"])
