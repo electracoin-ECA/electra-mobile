@@ -4,13 +4,13 @@ import { Container, Content, Text } from 'native-base'
 import ElectraSpinner  from './ElectraSpinner'
 import Config from 'react-native-config'
 
-var DeviceInfo = require('react-native-device-info');
+let DeviceInfo = require('react-native-device-info');
 
 interface UserSession {
-  code: number;
-  message: string;
-  status: string;
-  sessionId: string;
+  code: number,
+  message: string,
+  status: string,
+  sessionId: string
 }
 interface SplashScreenProps {
  name: string,
@@ -18,14 +18,14 @@ interface SplashScreenProps {
 }
 
 interface SplashScreenState {
-  userSession: Array<UserSession>;
-  isLoading: Boolean;
-  status: string;
-  deviceId: string;
+  userSession: Array<UserSession>,
+  isLoading: Boolean,
+  status: string,
+  deviceId: string
 }
 
 export default class SplashScreen extends React.Component<SplashScreenProps, SplashScreenState> {
-  static navigationOptions = ({ navigator });
+  //static navigationOptions = ({ navigator });
   constructor(props: SplashScreenProps) {
     super(props);
     this.state = {
@@ -40,8 +40,7 @@ export default class SplashScreen extends React.Component<SplashScreenProps, Spl
         //get the Unique ID of the Device
         //Create the Request and send it
         this.setState({status:'Verifying...'});
-    //    AsyncStorage.removeItem('electraDeviceId');
-    //    AsyncStorage.removeItem('electra-device-id');
+        AsyncStorage.removeItem('electra-device-id');
         this.checkDeviceIdInStorage();
         this.setState({status:'Loading...'});
 
@@ -52,14 +51,12 @@ export default class SplashScreen extends React.Component<SplashScreenProps, Spl
 
     let deviceId = await this.getDeviceId();
 
-    if(deviceId == null){
+    if(deviceId === null){
 
         //send the request to back end and retrieve the encrypted device id
         //store it in local storage and navigate the login screen
         this.verifyDeviceId(false);
-    }
-    else
-    {
+    }else {
       //send the encrypted device id to the back end and verify the encrypted device id
       //and check the status if the user should navigate to login or registration screen
       this.verifyDeviceId(true);

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`WalletScreen renders correctly 1`] = `
+exports[`Dashboard renders correctly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -29,7 +29,7 @@ ShallowWrapper {
           }
         }
       >
-        Please enter your current passphrase
+        Dashboard Application
       </Text>,
     },
     "ref": null,
@@ -40,7 +40,7 @@ ShallowWrapper {
       "props": Object {
         "accessible": true,
         "allowFontScaling": true,
-        "children": "Please enter your current passphrase",
+        "children": "Dashboard Application",
         "ellipsizeMode": "tail",
         "style": Object {
           "color": "#FFFFFF",
@@ -49,7 +49,7 @@ ShallowWrapper {
         },
       },
       "ref": null,
-      "rendered": "Please enter your current passphrase",
+      "rendered": "Dashboard Application",
       "type": [Function],
     },
     "type": [Function],
@@ -72,7 +72,7 @@ ShallowWrapper {
             }
           }
         >
-          Please enter your current passphrase
+          Dashboard Application
         </Text>,
       },
       "ref": null,
@@ -83,7 +83,7 @@ ShallowWrapper {
         "props": Object {
           "accessible": true,
           "allowFontScaling": true,
-          "children": "Please enter your current passphrase",
+          "children": "Dashboard Application",
           "ellipsizeMode": "tail",
           "style": Object {
             "color": "#FFFFFF",
@@ -92,7 +92,7 @@ ShallowWrapper {
           },
         },
         "ref": null,
-        "rendered": "Please enter your current passphrase",
+        "rendered": "Dashboard Application",
         "type": [Function],
       },
       "type": [Function],

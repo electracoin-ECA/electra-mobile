@@ -18,8 +18,13 @@
   },
   "jest": {
     "preset": "react-native",
+    "transformIgnorePatterns": [
+      "/node_modules/(?!react-native|react-navigation|native-base-shoutem-theme|@shoutem/animation|@shoutem/ui|tcomb-form-native)"
+    ],
+    "verbose": true,
     "transform": {
-      "^.+\\.tsx?$": "ts-jest"
+      "^.+\\.tsx?$": "ts-jest",
+      "^.+\\.(css|scss|less)$": "jest-css-modules"
     },
     "setupTestFrameworkScriptFile": "<rootDir>/jest.setup.js",
     "testRegex": "(/__tests__/.*|(\\.|/)test)\\.tsx?$",
@@ -67,9 +72,11 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "23.0.0-charlie.1",
+    "jest-css-modules": "^1.1.0",
     "jsdom": "^11.6.2",
     "react-native-dotenv": "^0.1.1",
     "react-native-mock-render": "0.0.19",
+    "react-native-navigation-mock-render": "^0.1.1",
     "react-renderer": "^0.1.4",
     "react-test-renderer": "^16.2.0",
     "ts-jest": "^22.0.4",

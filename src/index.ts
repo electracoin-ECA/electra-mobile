@@ -46,4 +46,5 @@ const RootStack = StackNavigator(
   }
 );
 
+
 AppRegistry.registerComponent('electramobile', () => RootStack)

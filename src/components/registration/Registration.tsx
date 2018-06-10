@@ -4,7 +4,7 @@ import { Container, Content, Button } from 'native-base'
 import ElectraSpinner  from '../splash/ElectraSpinner'
 
 export default class Registration extends React.Component {
-  static navigationOptions = ({ navigator });
+  //static navigationOptions = ({ navigator });
   render(){
     const {height: screenHeight, width: screenWidth} = Dimensions.get('window');
     return(
