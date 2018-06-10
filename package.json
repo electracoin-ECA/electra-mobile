@@ -19,7 +19,7 @@
   "jest": {
     "preset": "react-native",
     "transformIgnorePatterns": [
-      "/node_modules/(?!react-native|react-navigation|react-native-vector-icons|native-base-shoutem-theme|@shoutem/animation|@shoutem/ui|tcomb-form-native)"
+      "/node_modules/(?!react-native|react-navigation|react-native-vector-icons|native-base/node_modules/react-native-vector-icons|native-base-shoutem-theme|@shoutem/animation|@shoutem/ui|tcomb-form-native)"
     ],
     "verbose": true,
     "transform": {
