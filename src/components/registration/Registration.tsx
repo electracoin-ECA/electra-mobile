@@ -11,7 +11,6 @@ export default class Registration extends React.Component {
 
         <Container style={{flexDirection: 'row', justifyContent: 'center', backgroundColor: '#2e1325'}}>
           <Content>
-
             <View style={{flex: 1, height: screenHeight, alignItems: 'center', justifyContent: 'center', margin:6}}>
               <ElectraSpinner animate={false}/>
               <Text style={{paddingTop:10, paddingBottom:10, color:'#FFFFFF'}}>REGISTER A NEW WALLET</Text>

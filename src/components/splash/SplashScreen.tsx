@@ -47,7 +47,7 @@ export default class SplashScreen extends React.Component<SplashScreenProps, Spl
 
   }
 
-  checkDeviceIdInStorage = async() => {
+  private async checkDeviceIdInStorage() {
 
     let deviceId = await this.getDeviceId();
 
@@ -64,7 +64,7 @@ export default class SplashScreen extends React.Component<SplashScreenProps, Spl
 
   }
 
-  async verifyDeviceId(isEncrypted:boolean){
+  private async verifyDeviceId(isEncrypted:boolean){
     let deviceId = DeviceInfo.getUniqueID();
     let electraUserRequest = {
       deviceId: deviceId,
@@ -99,15 +99,12 @@ export default class SplashScreen extends React.Component<SplashScreenProps, Spl
   render() {
      const {height: screenHeight} = Dimensions.get('window');
     if(this.state.isLoading) {
-      return this.currentAction(screenHeight);
+      return this.renderCurrentAction(screenHeight);
     }
-    else {
-      //Get the response and navigate on to Login or Registration or Show the block message
-      return;
-    }
+    return;
   }
 
-  currentAction(screenHeight: any){
+  private renderCurrentAction(screenHeight: any){
       return (
         <Container style={{flexDirection: 'row', justifyContent: 'center', backgroundColor: '#2e1325'}}>
           <Content>
@@ -120,16 +117,11 @@ export default class SplashScreen extends React.Component<SplashScreenProps, Spl
       )
   }
 
-  checkDeviceId() {
-    let deviceId = DeviceInfo.getUniqueID();
-    Alert.alert('Device: ' + deviceId);
-  }
-
-  saveDeviceId(deviceId: string){
+  private saveDeviceId(deviceId: string){
       AsyncStorage.setItem('electra-device-id', deviceId);
   }
 
-  getDeviceId = async() => {
+  private async getDeviceId() {
     let deviceId = null;
     try {
         deviceId = await AsyncStorage.getItem('electra-device-id');
@@ -141,7 +133,7 @@ export default class SplashScreen extends React.Component<SplashScreenProps, Spl
     return deviceId;
   }
 
-  navigateUserOnResponse(status: string) {
+  private navigateUserOnResponse(status: string) {
 
     if(status === 'ACTIVE'){
       //Modal of Login Screen

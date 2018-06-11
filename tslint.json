@@ -1,11 +1,11 @@
 {
     "extends": ["tslint:latest", "tslint-react"],
     "rules": {
-        "member-ordering": [false],
-        "no-inferrable-types": [false],
+        "member-ordering": [true],
+        "no-inferrable-types": [true],
         "typedef": [false],
         "curly": [true, "ignore-same-line"],
-        "no-switch-case-fall-through": false,
+        "no-switch-case-fall-through": true,
         "indent": [true, "spaces"],
         "max-line-length": [true,120],
         "trailing-comma": [

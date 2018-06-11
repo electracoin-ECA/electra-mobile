@@ -25,16 +25,10 @@ const routeConfig = {
 
 describe('Splash Screen', () => {
 
-  it('renders navigation correctly', async () => {
-    const MyStackNavigator = StackNavigator(routeConfig);
-    const rendered = renderer.create(<MyStackNavigator />).toJSON();
-    expect(rendered).toMatchSnapshot();
-  })
-
   it('renders Splash Screen', () => {
       const splashNavigator = StackNavigator(routeConfig);
       let wrapper = renderer.create(<SplashScreen name='SplashScreen' navigation={splashNavigator} />).toJSON();
-      expect(wrapper).toMatchSnapshot()
+      expect(wrapper).toMatchSnapshot();
   })
 
   it('it should navigate to Registration Screen', async () => {
