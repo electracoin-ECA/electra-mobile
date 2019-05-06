@@ -13,7 +13,9 @@
     "lint": "tslint -p tsconfig.json",
     "watch": "npm run build -- -w",
     "test": "jest --coverage",
-    "test:watch": "jest --watch --coverage"
+    "test:watch": "jest --watch --coverage",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "jest": {
     "preset": "react-native",
@@ -41,7 +43,8 @@
     "react-native": "0.53.2",
     "react-native-linear-gradient": "^2.4.0",
     "react-native-vector-icons": "^4.5.0",
-    "react-navigation": "^1.0.0-beta.27"
+    "react-navigation": "^1.0.0-beta.27",
+    "snyk": "^1.161.1"
   },
   "devDependencies": {
     "@types/bitcoinjs-lib": "^3.3.1",
@@ -92,5 +95,6 @@
     "eca",
     "electra",
     "iOS"
-  ]
+  ],
+  "snyk": true
 }
